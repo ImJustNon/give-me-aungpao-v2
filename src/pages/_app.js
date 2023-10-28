@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
 		<Head>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
 		</Head>
 		
 		<ParticlesComponents />
@@ -40,6 +41,8 @@ export default function App({ Component, pageProps }) {
 				</div>
 			</motion.div>
 		</AnimatePresence>
+
+		<Footer />
     </>
   );
 }
