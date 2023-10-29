@@ -12,7 +12,7 @@ function Home() {
 			url: voucherUrl,
 		}).then(response =>{
 			if(response.data.error){
-				setErrorMessage("🤬 What did you send me? I only need money. 💵");
+				setErrorMessage("🤬 What did you just sended to me? I only need money. 💵");
 			}
 			else {
 				Router.push(`/thankyou?name=${response.data.data.from}&amount=${response.data.data.amount}`);
