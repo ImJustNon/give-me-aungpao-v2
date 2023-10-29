@@ -11,7 +11,7 @@
 body{
   padding: 0;
   margin: 0;
-  background: url(https://profile.nonlnwza.xyz/static/media/bg.96205d80e10b33104d10.png)no-repeat center center fixed;
+  background: url(../assets/images/bg.jpg)no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
