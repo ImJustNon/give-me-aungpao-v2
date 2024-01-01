@@ -35,10 +35,10 @@ function Home() {
 			<div className="hero min-h-screen">
 				<div className="hero-content text-center glass rounded-2xl w-full">
 					<div className="w-full my-5">
-						<h1 className="text-3xl font-bold mb-2">🧧 Give Me Aungpao. NOW!!! 🧧</h1>
-						<p className='text-lg mb-1'>🤑 Have you ever felt like you didn{"'"}t know what to do with your money?  🤑</p>
-						<p className='text-sm mb-5'>Just bring it to me. LOL</p>
-						<input type="text" placeholder="Paste Your Money Here" className="input input-bordered input-error text-center w-full max-w-lg mr-2" onChange={(e) => handleInput(e)} />
+						<h1 className="text-3xl font-bold mb-2 text-black">🧧 Give Me Aungpao. NOW!!! 🧧</h1>
+						<p className='text-lg mb-1 text-black'>🤑 Have you ever felt like you didn{"'"}t know what to do with your money?  🤑</p>
+						<p className='text-sm mb-5 text-black'>Just bring it to me. LOL</p>
+						<input type="text" placeholder="Paste Your Money Here" className="input input-bordered input-error text-center w-full max-w-lg mr-2 bg-white text-black placeholder:text-black placeholder:font-medium" onChange={(e) => handleInput(e)} />
 						<button className="btn bg-orange-600 btn-error text-white font-normal normal-case mt-3 w-96 md:w-40" onClick={(event) => handleSubmit(event)} >
 							{isLoading === true ?  
 								<>
